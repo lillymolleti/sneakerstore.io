@@ -66,3 +66,128 @@ h1 {
   height: 50px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) 
+{
+  .shoe-item-card {
+  width: 50%;
+}
+
+  .shoe-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  margin:10px;
+}
+.store-container {
+  width: 105%;
+  height: 100%;
+  margin: auto;
+}
+.shoe-image:hover {
+  transform: scale(1.3); /* Corrected hover syntax */
+  transition: transform 0.3s ease-in-out; /* Moved transition here */
+}
+.add-to-cart-img {
+  margin:10px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and  (max-width: 768px)
+{
+  .container
+  {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+  }
+   .shoe-item-card {
+  width: 90%;
+}
+
+  .shoe-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  margin:10px;
+}
+.store-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+.shoe-image:hover {
+  transform: scale(1.3); /* Corrected hover syntax */
+  transition: transform 0.3s ease-in-out; /* Moved transition here */
+}
+.add-to-cart-img {
+  margin:10px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 991px) 
+{
+  .shoe-items-container {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 20px;
+}
+.shoe-item-card {
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.6);
+    border: 2px solid whitesmoke;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+  .shoe-items-container {
+    display: flex;
+    gap:6px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+  .shoe-image:hover {
+  transform: scale(1.2); /* Corrected hover syntax */
+  transition: transform 0.3s ease-in-out; /* Moved transition here */
+}
+.shoe-details {
+
+    padding: 10px 20px;
+    width: 100%;
+    margin: 10px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+
+    /* not needed here i guess */
+}
